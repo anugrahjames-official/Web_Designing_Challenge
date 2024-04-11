@@ -1,0 +1,47 @@
+button{
+    color: #ffffff;
+    background-color: red;
+}
+
+#para1{
+    color: blue;
+}
+
+#para2{
+    color: green;
+}
+
+.exclamation{
+    font-size: larger;
+    color: rgb(0, 26, 255);
+}
+
+.outer-div{
+    width: 300px; 
+    height: 300px;
+    background-color: yellow;
+    margin-top: 40;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 20;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 5px solid black;
+}
+
+.inner-div{     
+    width: 200px; 
+    height: 200px;
+    background-color: rgb(0, 16, 240);
+    margin-top: 40;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 20;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 5px solid rgb(0, 255, 242);
+}
