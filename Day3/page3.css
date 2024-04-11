@@ -1,0 +1,34 @@
+.Header {
+    width: 100%;
+    height: 150px;
+    background-color: red;
+}
+
+.left-body {
+    width: 20%;
+    height: 400px;
+    float: left;
+    background-color: green;
+}
+
+.right-body {
+    width: 80%;
+    height: 400px;
+    float: left;
+    background-color: rgb(255, 0, 85);
+}
+
+.Footer {
+    width: 100%;
+    height: 150px;
+    float: ;
+    background-color: rgb(48, 146, 226);
+}
+
+.Body {
+    height: 400px;
+}
+
+body {
+    margin: 0;
+}
