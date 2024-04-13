@@ -10,26 +10,159 @@
     <div class="container">
       <div class="header">
         <div class="logo">
-            <a class="logo-text" href="index.html">facebook</a>
+          <a class="logo-text" href="index.html">facebook</a>
         </div>
         <div class="login">
-            <form action="">
+          <form action="">
             <table class="login-controls">
-                <tr>
-                    <td><label class="login-label">Email or phone</label></td>
-                    <td><label class="login-label">Password</label></td>
-                </tr>
-                <tr>
-                    <td><input type="text" /></td>
-                    <td><input type="password" /></td>
-                    <td><input type="submit" value="Log In" /></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Forgotten account?</td>
-                </tr>
+              <tr>
+                <td><label class="login-label">Email or phone</label></td>
+                <td><label class="login-label">Password</label></td>
+              </tr>
+              <tr>
+                <td><input type="text" /></td>
+                <td><input type="password" /></td>
+                <td>
+                  <input class="login-button" type="submit" value="Log In" />
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="forgotten" href="forgotten.html"
+                    >Forgotten account?</a
+                  >
+                </td>
+              </tr>
             </table>
-            </form>
+          </form>
+        </div>
+      </div>
+      <div class="main-body">
+        <div class="left-body">
+          <p class="left-text">
+            Facebook helps you connect and share with the<br />
+            people in your life.
+          </p>
+          <img class="left-image" src="images/fb.png" alt="Facebook Image" />
+        </div>
+        <div class="right-body">
+          <h1>Create an account</h1>
+          <p>It's free and always will be.</p>
+          <form action="">
+            <input type="text" class="first-name" placeholder="First name" />
+            <input type="text" class="last-name" placeholder="Surname" />
+            <input
+              type="text"
+              class="mobile-or-email"
+              placeholder="Mobile number or email address"
+            /><br />
+            <input
+              type="password"
+              class="new-password"
+              placeholder="New Password"
+            /><br />
+            <input
+              type="password"
+              class="confirm-password"
+              placeholder="Re-enter password"
+            /><br />
+            <label class="birthday">Birthday</label><br />
+            <select class="day">
+              <option value="0">Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <select class="month">
+              <option value="0">Month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <select class="year">
+              <option value="0">Year</option>
+              <option value="1">2000</option>
+              <option value="2">1999</option>
+              <option value="3">1998</option>
+              <option value="4">1997</option>
+              <option value="5">1996</option>
+              <option value="6">1995</option>
+              <option value="7">1994</option>
+              <option value="8">1993</option>
+              <option value="9">1992</option>
+              <option value="10">1991</option>
+              <option value="11">1990</option>
+              <option value="12">1989</option>
+              <option value="13">1988</option>
+              <option value="14">1987</option>
+              <option value="15">1986</option>
+              <option value="16">1985</option>
+              <option value="17">1984</option>
+              <option value="18">1983</option>
+              <option value="19">1982</option>
+              <option value="20">1981</option>
+              <option value="21">1980</option>
+              <option value="22">1979</option>
+              <option value="23">1978</option>
+              <option value="24">1977</option>
+              <option value="25">1976</option>
+              <option value="26">1975</option>
+              <option value="27">1974</option>
+              <option value="28">1973</option>
+              <option value="29">1972</option>
+              <option value="30">1971</option>
+              <option value="31">1970</option>
+            </select>
+            <h4>Gender</h4>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female" />Female
+            <input type="radio" name="gender" value="custom" />Custom
+            <br><input class="signup-button" type="submit" value="Sign Up" />
+            <p>
+              By clicking Sign Up, you agree to our
+              <a href="terms.html">Terms</a>,<br />
+              <a href="privacy.html">Data Policy</a> and
+              <a href="cookies.html">Cookies Policy</a>.
+            </p>
+          </form>
         </div>
       </div>
     </div>
