@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Designing Challenge</title>
+  </head>
+  <body>
+    <button id="btn">Click Me</button>
+    <div
+      style="width: 300px; height: 300px; background-color: red"
+      id="box"
+    ></div>
+    <input type="text" id="inp" /><br />
+    <label style="display: none; color: red; font-weight: bold" id="error"
+      >Enter minimum 4 characters</label
+    ><br />
+    <input type="text" id="inp2" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          //alert("You are HACKED$$$$$$$$$$");
+          $("#box").fadeToggle(1000);
+        });
+        $("#btn").mouseenter(function () {
+          $(this).css("background-color", "red");
+        });
+      });
+
+      $("#inp").blur(function () {
+        var text = $("#inp").val();
+        if (text.length < 4) {
+          // alert("Enter minimum number of characters");
+          $("#error").show();
+        } else {
+          $("#error").hide();
+        }
+      });
+    </script>
+  </body>
+</html>
