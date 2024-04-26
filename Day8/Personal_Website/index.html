@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/803dc096dd.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="bg-info">
@@ -433,7 +434,7 @@
     <section class="bg-light p-5" id="contact">
       <div class="fluid-container">
         <div class="row">
-          <form class="row g-3">
+          <form id="submit-form" action="" class="row g-3">
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Name</label>
               <input
@@ -444,7 +445,7 @@
               />
             </div>
             <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Place</label>
+              <label for="inputPlace" class="form-label">Place</label>
               <input
                 type="text"
                 class="form-control"
@@ -462,7 +463,7 @@
               />
             </div>
             <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Mobile No</label>
+              <label for="inputMobile" class="form-label">Mobile No</label>
               <input
                 type="tel"
                 class="form-control"
@@ -491,11 +492,14 @@
         <div class="row">
           <div class="col-md-12 text-center text-white p-3 m-0">
             <a href="https://www.linkedin.com/in/anugrah-james">
-              <i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://github.com/anugrahjames-official">
-                <i class="fa-brands fa-github"></i></a>
-                <a href="https://twitter.com/AnugrahJames_AJ">
-                  <i class="fa-brands fa-twitter"></i></a>
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/anugrahjames-official">
+              <i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://twitter.com/AnugrahJames_AJ">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
             <a href="https://www.instagram.com/anugrahjames_aj/">
               <i class="fa-brands fa-instagram"></i
             ></a>
@@ -522,5 +526,23 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#submit-form").submit((e) => {
+        e.preventDefault();
+        $.ajax({
+          url: "https://script.google.com/macros/s/AKfycbwCF1b0H61YmWrtyt5euLdgMSR8YmcGeYOHvF1iO2ue7AS-XpJDNSYD8knRzYYfaNt6/exec",
+          data: $("#submit-form").serialize(),
+          method: "post",
+          success: function (response) {
+            alert("Form submitted successfully");
+            window.location.reload();
+            //window.location.href="https://google.com"
+          },
+          error: function (err) {
+            alert("Something Error");
+          },
+        });
+      });
+    </script>
   </body>
 </html>
